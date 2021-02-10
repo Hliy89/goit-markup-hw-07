@@ -7,6 +7,9 @@
 @import './base/container';
 
 // COMPONENTS
+@import './components/logo';
+@import './components/site-nav';
+@import './components/contacts';
 @import './components/social-list';
 @import './components/button';
 @import './components/title-section';
@@ -15,8 +18,8 @@
 @import './components/btn-portfolio';
 
 // LAYOUT
-@import './layout/hero';
 @import './layout/header';
+@import './layout/hero';
 @import './layout/features';
 @import './layout/works-section';
 @import './layout/team-section';
