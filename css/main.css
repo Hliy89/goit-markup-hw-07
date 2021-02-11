@@ -1,4 +1,11 @@
 @charset "UTF-8";
+:root {
+  --primary-text-color: #212121;
+  --second-text-color: #757575;
+  --accent-color: #2196f3;
+  --white-color: #ffffff;
+}
+
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -8,13 +15,6 @@
   height: 1px !important;
   width: 1px !important;
   overflow: hidden;
-}
-
-:root {
-  --primary-text-color: #212121;
-  --second-text-color: #757575;
-  --accent-color: #2196f3;
-  --white-color: #ffffff;
 }
 
 h1,
@@ -62,8 +62,6 @@ img {
 .container {
   margin: 0 auto;
   width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 /* Logo Header */
@@ -162,10 +160,6 @@ img {
   text-decoration: none;
 }
 
-.contacts-list-item {
-  margin-right: 10px;
-}
-
 .contact-list-link {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -178,6 +172,7 @@ img {
 .contact-list-icon {
   flex-shrink: 0;
   margin-right: 10px;
+  fill: var(--second-text-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -250,7 +245,7 @@ img {
 
 /* Соц. сети секции Наша Команда */
 .social-list {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   padding-bottom: 30px;
 }
@@ -307,12 +302,6 @@ img {
   text-transform: uppercase;
 }
 
-.footer-item {
-  display: block;
-  width: 270px;
-  margin-right: 30px;
-}
-
 .footer-social {
   display: flex;
 }
@@ -356,7 +345,7 @@ img {
   background-color: var(--white-color);
   font-family: Roboto;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
   display: flex;
@@ -626,17 +615,12 @@ img {
 }
 
 /* Button-Portfolio */
-.container-btn {
-  display: flex;
-  justify-content: center;
-  padding-top: 0;
-  padding-bottom: 50px;
-}
-
 .button-list {
   display: flex;
   flex-wrap: wrap;
-  padding: 0;
+  justify-content: center;
+  padding-top: 0;
+  padding-bottom: 50px;
 }
 
 .button-list .item:not(:last-child) {
@@ -676,6 +660,7 @@ img {
 
 .header {
   background-color: #ffffff;
+  border: 1px solid #ececec;
 }
 
 .container-header {
@@ -769,8 +754,6 @@ img {
 
 .feature-text {
   margin-left: 0;
-  width: 270px;
-  height: 75px;
   color: var(--second-text-color);
   font-size: 14px;
   line-height: 1.7;
@@ -835,12 +818,10 @@ img {
 }
 
 .team-list .team-card {
+  text-align: center;
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
   margin-top: 30px;
-}
-
-.team-card {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
@@ -856,15 +837,12 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-  text-align: center;
-  text-decoration: none;
 }
 
 .team-profession {
   color: var(--second-text-color);
   font-size: 16px;
   line-height: 1.18;
-  text-align: center;
   text-decoration: none;
   margin-bottom: 16px;
 }
@@ -876,18 +854,15 @@ img {
   padding-top: 94px;
 }
 
-.social-list {
+.clients-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -15px;
-  margin-right: -15px;
-}
-
-.clients-list-item {
   padding-bottom: 94px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
-.social-list .clients-list-item {
+.clients-list .clients-list-item {
   flex-basis: calc((100% - 180px) / 6);
   margin-left: 15px;
 }
@@ -896,7 +871,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
+  width: 100%;
   height: 90px;
   box-sizing: border-box;
   border: 1px solid #afb1b8;
@@ -928,11 +903,19 @@ img {
 /* Footer Подвал */
 .footer {
   background-color: #2f303a;
+  padding: 60px 0;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .container-footer {
-  padding: 60px 0;
   display: flex;
+}
+
+.footer-item {
+  display: block;
+  width: 270px;
+  margin-right: 30px;
 }
 
 /* Рассылка */

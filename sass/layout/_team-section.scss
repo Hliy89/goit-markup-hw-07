@@ -13,15 +13,13 @@
   margin-top: -30px;
 
   & .team-card {
+    text-align: center;
     flex-basis: calc(100% / 4 - 30px);
     margin-left: 30px;
     margin-top: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
   }
-}
-
-.team-card {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
 }
 
 .user-info {
@@ -36,15 +34,12 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-  text-align: center;
-  text-decoration: none;
 }
 
 .team-profession {
   color: var(--second-text-color);
   font-size: 16px;
   line-height: 1.18;
-  text-align: center;
   text-decoration: none;
   margin-bottom: 16px;
 }
